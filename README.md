@@ -4,7 +4,7 @@
 Метод 1: add information about new pet without photo.
 Метод 2: add photo of a pet.
 
-Напишите ещё 10 различных тестов для данного REST API интерфейса:
+Напишите ещё 10 различных тестов:
 
 test_successful_add_new_pet_without_foto
 
