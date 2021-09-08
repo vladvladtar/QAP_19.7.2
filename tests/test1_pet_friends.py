@@ -52,7 +52,7 @@ def test_get_api_key_for_invalid_user(email=invalid_email, password=valid_passwo
 
 
 def test_get_all_pets_with_invalid_key(filter=''):
-    """ Проверяем что запрос всех питомцев возвращает не пустой список.
+    """ Проверяем, что запрос всех питомцев возвращает не пустой список.
     Для этого сначала получаем api ключ и сохраняем в переменную auth_key.
     Далее используя этого ключ запрашиваем список всех питомцев и проверяем,
     что список не пустой.
@@ -66,7 +66,7 @@ def test_get_all_pets_with_invalid_key(filter=''):
 
 def test_add_new_pet_with_invalid_age(name='Морковка', animal_type='такса',
                                       age=invalid_age, pet_photo='images/masya.jpg'):
-    """Проверяем что возраст питомца нельзя обозначить буквами"""
+    """Проверяем, что возраст питомца нельзя обозначить буквами"""
 
     # Получаем полный путь изображения питомца и сохраняем в переменную pet_photo
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
@@ -83,7 +83,7 @@ def test_add_new_pet_with_invalid_age(name='Морковка', animal_type='та
 
 def test_add_new_pet_with_big_age(name='Кеша', animal_type='удав',
                                      age='9999', pet_photo='images/udav.jpg'):
-    """Проверяем что можно добавить питомца с корректными данными"""
+    """Проверяем, что можно добавить питомца с некорректным возрастом"""
 
     # Получаем полный путь изображения питомца и сохраняем в переменную pet_photo
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
@@ -100,7 +100,7 @@ def test_add_new_pet_with_big_age(name='Кеша', animal_type='удав',
 
 def test_add_new_pet_without_age(name='Кеша', animal_type='удав',
                                      age='', pet_photo='images/udav.jpg'):
-    """Проверяем что можно добавить питомца с корректными данными"""
+    """Проверяем что можно добавить питомца с отсутствием даннных о возрасте"""
 
     # Получаем полный путь изображения питомца и сохраняем в переменную pet_photo
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
@@ -117,7 +117,7 @@ def test_add_new_pet_without_age(name='Кеша', animal_type='удав',
 
 def test_add_new_pet_without_animal_type(name='Вася', animal_type='',
                                      age='7', pet_photo='images/enot.jpg'):
-    """Проверяем что можно добавить питомца с корректными данными"""
+    """Проверяем что можно добавить питомца с отсутствием данных о породе"""
 
     # Получаем полный путь изображения питомца и сохраняем в переменную pet_photo
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
@@ -134,7 +134,7 @@ def test_add_new_pet_without_animal_type(name='Вася', animal_type='',
 
 def test_add_new_pet_without_name(name='', animal_type='Енот',
                                      age='7', pet_photo='images/enot.jpg'):
-    """Проверяем что можно добавить питомца с корректными данными"""
+    """Проверяем что можно добавить питомца с отсутствием данных об имени"""
 
     # Получаем полный путь изображения питомца и сохраняем в переменную pet_photo
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
@@ -151,7 +151,7 @@ def test_add_new_pet_without_name(name='', animal_type='Енот',
 
 def test_add_new_pet_without_name_age(name='', animal_type='Енот',
                                      age='', pet_photo='images/enot.jpg'):
-    """Проверяем что можно добавить питомца с корректными данными"""
+    """Проверяем что можно добавить питомца с отсутствием данных об имени и возрасте"""
 
     # Получаем полный путь изображения питомца и сохраняем в переменную pet_photo
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
@@ -168,7 +168,7 @@ def test_add_new_pet_without_name_age(name='', animal_type='Енот',
 
 def test_add_new_pet_without_name_age_animal_type(name='', animal_type='',
                                      age='', pet_photo='images/enot.jpg'):
-    """Проверяем что можно добавить питомца с корректными данными"""
+    """Проверяем что можно добавить питомца только с фото"""
 
     # Получаем полный путь изображения питомца и сохраняем в переменную pet_photo
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
