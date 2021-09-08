@@ -5,9 +5,18 @@
 Метод 2: add photo of a pet.
 
 Напишите ещё 10 различных тестов для данного REST API интерфейса:
+
 test_successful_add_new_pet_without_foto
+
 test_successful_update_self_pet_add_photo
+
 test_get_api_key_for_invalid_user
+
 test_get_all_pets_with_invalid_key
+
 test_add_new_pet_with_invalid_age
+
+test_add_new_pet_with_big_age
+
+
 
