@@ -18,5 +18,13 @@ test_add_new_pet_with_invalid_age
 
 test_add_new_pet_with_big_age
 
+test_add_new_pet_without_age
+
 test_add_new_pet_without_animal_type
+
+test_add_new_pet_without_name
+
+test_add_new_pet_without_name_age
+
+test_add_new_pet_without_name_age_animal_type
 
